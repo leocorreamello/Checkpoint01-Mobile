@@ -20,7 +20,6 @@ export default function App() {
 
   const handleLogin = () => {
     setIsLoading(true);
-    // Simula o tempo de uma requisição de login
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
@@ -28,7 +27,6 @@ export default function App() {
 
   return (
     <View className="flex-1 items-center justify-center bg-black px-4">
-      {/* App logo + title */}
       <View className="w-full max-w-md mb-8 px-2">
         <Image
           source={require("./assets/logoFiap.png")}
@@ -38,9 +36,7 @@ export default function App() {
         <Text className="text-sm text-gray-300 mt-2 text-left">Bem-vindo de volta 👋</Text>
       </View>
 
-      {/* Card */}
       <View className="w-full max-w-md bg-white/5 border border-white/10 rounded-3xl p-6 mb-6">
-        {/* RM input */}
         <View className="mb-4">
           <Text className="text-sm font-medium text-gray-200 mb-2 ml-1">RM</Text>
           <View className="relative justify-center">
@@ -63,7 +59,6 @@ export default function App() {
           </View>
         </View>
 
-        {/* Password input with show toggle */}
         <View className="mb-3">
           <Text className="text-sm font-medium text-gray-200 mb-2 ml-1">Senha</Text>
           <View className="relative justify-center">
@@ -87,7 +82,6 @@ export default function App() {
           </View>
         </View>
 
-        {/* Remember and Forgot */}
         <View className="flex-row items-center justify-between mb-6 mt-2">
           <View className="flex-row items-center">
             <Switch
@@ -104,7 +98,6 @@ export default function App() {
           </TouchableOpacity>
         </View>
 
-        {/* Submit button */}
         <TouchableOpacity 
           className={`w-full rounded-xl py-3.5 items-center justify-center shadow-lg shadow-pink-600/30 ${isLoading ? 'bg-pink-700' : 'bg-pink-600'}`}
           activeOpacity={0.8}
@@ -120,7 +113,6 @@ export default function App() {
 
       </View>
 
-      {/* Small footer */}
       <View className="flex-row mt-4">
         <Text className="text-gray-400 mr-2 text-sm">Ainda não tem conta?</Text>
         <TouchableOpacity activeOpacity={0.7}>
